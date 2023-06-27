@@ -69,10 +69,10 @@ if (WITH_ASAN)
 endif()
 
 ###########################################################
-#option(ASIO_UTP_WITH_TESTS             "" OFF)
-#option(ASIO_UTP_WITH_EXAMPLES          "" OFF)
-#option(ASIO_UTP_DEBUG_LOGGING          "" OFF)
-#option(UTP_DEBUG_LOGGING               "" OFF)
+option(ASIO_UTP_WITH_TESTS             "" OFF)
+option(ASIO_UTP_WITH_EXAMPLES          "" OFF)
+option(ASIO_UTP_DEBUG_LOGGING          "" OFF)
+option(UTP_DEBUG_LOGGING               "" OFF)
 add_subdirectory(./modules/asio-utp)
 add_library(lib::asio_utp ALIAS asio_utp)
 
